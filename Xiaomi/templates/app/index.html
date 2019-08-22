@@ -1,0 +1,219 @@
+{% extends 'app/bash.html' %}
+{% block index %}
+        <div class="banner-nav">
+            <div class="nav-container">
+                <ul class="nav-list">
+                    {% for lord_menu in menus %}
+                        {% for attached_menu in menus %}
+                            {% if lord_menu.id == attached_menu.mid %}
+                                <li class="nav-item " onmouseover="add({{ lord_menu.id }})" onmouseout="out()">
+                                    <span class="lor_menu"><a
+                                            data-src="/goodsbycategory?firstId=446&amp;secondId=446&amp;"
+                                            id="{{ lord_menu.id }}">{{ lord_menu.menu }}</a></span>
+                                    <span>/</span>
+                                    <span class="attached_menu"><a
+                                            data-src="/goodsbycategory?firstId=115&amp;secondId=115&amp;"
+                                            id="{{ attached_menu.mid }}">{{ attached_menu.menu }}</a></span>
+                                </li>
+                            {% endif %}
+                        {% endfor %}
+                    {% endfor %}
+                </ul>
+
+                {% for lord_menu in menus %}
+                    <div class="nav-detail" name="{{ lord_menu.id }}" onmouseover="adds()" onmouseout="out()">
+                        <div class="cate-detail-group">
+                            <p id="{{ lord_menu.id }}">{{ lord_menu.menu }}</p>
+                            <ul class="cate-detail-list">
+                                {% for p in title %}
+                                    {% if p.pid == lord_menu.id %}
+                                        <li class="m-tag-a">
+                                            <img data-src="{{ p.image }}"
+                                                 src="{{ p.image }}"
+                                                 alt="{{ p.content }}"><span><a href="list">{{ p.content }}</a></span></li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                        </div>
+                        {% for attached_menu in menus %}
+                            {% if lord_menu.id == attached_menu.mid %}
+                                <div class="cate-detail-group">
+                                    <p id="{{ attached_menu.id }}">{{ attached_menu.menu }}</p>
+                                    {% for p in title %}
+                                        <ul class="cate-detail-list">
+                                            {% if p.pid ==  attached_menu.id %}
+                                                <li class="m-tag-a" data-src="/goodsbycategory?firstId=155&amp;secondId=990&amp;title=%E5%A9%B4%E7%AB%A5%E4%B8%8A%E6%96%B0">
+                                                    <img data-src="{{ p.image }}"
+                                                         src="{{ p.image }}"
+                                                         alt="{{ p.content }}"><span><a href="list">{{ p.content }}</a></span></li>
+                                            {% endif %}
+                                        </ul>
+                                    {% endfor %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="banner-box">
+                <div class="m-banner ">
+                    <div class="m-ban-con">
+                        <div id="wrap">
+                            {% for image in menus %}
+                            <div class="banner" style="opacity: 0;">
+                                <div class="banner-img">
+                                    <img src="{{ image.big_image }}" width="859px" height="358px" alt="轮播图">
+                                </div>
+                            </div>
+                            {% endfor %}
+{#                            <div class="banner" style="opacity: 1;">#}
+{#                                <div class="banner-img">#}
+{#                                    <img src="https://img.youpin.mi-img.com/youpinoper/fa0da0abecd62e0dba63bcc5d8d56e20.jpg?id=&w=1080&h=450"#}
+{#                                         width="859px" height="358px" alt="轮播图1">#}
+{#                                </div>#}
+{#                            </div>#}
+{##}
+{#                            <div class="banner" style="opacity: 0;">#}
+{#                                <div class="banner-img">#}
+{#                                    <img src="https://img.youpin.mi-img.com/youpinoper/00167e46106fcb98aee05fc7a695879a.jpg?id=&w=1080&h=450"#}
+{#                                         width="859px" height="358px" alt="轮播图1">#}
+{#                                </div>#}
+{#                            </div>#}
+{##}
+{#                            <div class="banner" style="opacity: 0;">#}
+{#                                <div class="banner-img">#}
+{#                                    <img src="https://img.youpin.mi-img.com/youpinoper/97f2ca607215c38c0a6a0e5a5f739bb8.jpg?id=&w=1080&h=450"#}
+{#                                         width="859px" height="358px" alt="轮播图1">#}
+{#                                </div>#}
+{#                            </div>#}
+{##}
+{#                            <div class="banner" style="opacity: 0;">#}
+{#                                <div class="banner-img">#}
+{#                                    <img src="https://img.youpin.mi-img.com/youpinoper/dbe18543549d2353bbfc19e181daf709.jpg?id=&w=1080&h=450"#}
+{#                                         width="859px" height="358px" alt="轮播图1">#}
+{#                                </div>#}
+{#                            </div>#}
+
+                            <div class="tab">
+                                <span class=""></span>
+                                <span class=""></span>
+                                <span class=""></span>
+                                <span class=""></span>
+                                <span class=""></span>
+                            </div>
+
+                            <div class="swiper-button-next m-icons  m-icons-next-hover">
+
+                            </div>
+                            <div class="swiper-button-prev m-icons  m-icons-forward-hover"></div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h-section h-new-sec">
+            <div class="container clearfix">
+                <div class="h-sec-top clearfix"><h2 class="h-subTit">每日新品<span>每天10点 惊喜不断</span></h2></div>
+                <div class="m-sec-main mt1">
+                    <div class="swiper-container swiper-container-horizontal">
+                        <div class="swiper-wrapper">
+                            {% for title in menus %}
+                                {% if title.id == title.plate_id %}
+                                    <div class="swiper-slide swiper-slide-active"
+                                         style="width: 266.25px; margin-right: 5px;">
+                                        <a href="detail?id={{ title.id }}"><div class="m-goods-item-container new-item-container first pro-item-sec margin-left-0"
+                                             data-src="/detail?gid=110498" data-target="_blank">
+                                            <div class="small-item-img">
+                                                <div class="m-placeholder" style="width: 266px; height: 266px;">
+                                                    <img src="{{ title.image }}" alt="邦德富士达27速铝合金山地自行车"
+                                                         style="width: 266px; height: 266px;">
+                                                </div>
+                                            </div>
+                                            <div class="m-goods-pro-tag-con">{{ title.select }}</div>
+                                            <div class="m-goods-common-box"><p class="pro-info" title="{{ title.title }}">
+                                                {{ title.title }}</p>
+                                                <p class="pro-desc" title="{{ title.content }}">{{ title.content }}</p>
+                                                <p class="pro-price"><span class="pro-unit">¥</span><span
+                                                        class="m-num">{{ title.price }}</span></p></div>
+                                        </div></a>
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                        <div class="swiper-button-next m-icons m-icons-next-hover"></div>
+                        <div class="swiper-button-prev-test m-icons-test m-icons-forward-hover-test"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h-section h-new-sec">
+            <div class="container clearfix">
+                <div class="h-sec-top clearfix"><h2 class="h-subTit">热门<span>感动人心 价格厚道</span></h2></div>
+                <div class="m-sec-main mt1">
+                    <div class="swiper-container swiper-container-horizontal">
+                        <div class="swiper-wrapper">
+                            {% for plate in menus %}
+                                {% if plate.plate_id >= 7 and plate.plate_id < 12 %}
+                                    <div class="swiper-slide" style="width: 266.25px; margin-right: 5px;">
+                                        <a href="detail?id={{ plate.id }}"><div class="m-goods-item-container new-item-container  pro-item-sec margin-left-0"
+                                             data-src="/detail?gid=102607" data-target="_blank">
+                                            <div class="small-item-img">
+                                                <div class="m-product-image-container undefined"
+                                                     style="width: 266px; height: 266px;"
+                                                     data-src="{{ plate.image }}">
+                                                    <div class="img-container" style="width: 266px; height: 266px;"><img
+                                                            src="{{ plate.image }}"
+                                                            data-src="{{ plate.image }}"
+                                                            alt="云米互联网冰箱21Face 450L"
+                                                            style="width: 266px; height: 266px;"></div>
+                                                </div>
+                                            </div>
+                                            <div class="m-goods-pro-tag-con">{{ plate.select }}</div>
+                                            <div class="m-goods-common-box"><p class="pro-info"
+                                                                               title="云米互联网冰箱21Face 450L">{{ plate.title }}</p>
+                                                <p class="pro-desc"
+                                                   title="AI语音控制，变频压缩机，风冷无霜，草本杀菌">{{ plate.content }}</p>
+                                                <p class="pro-price"><span class="pro-unit">¥</span><span
+                                                        class="m-num">{{ plate.price }}</span></p></div>
+                                        </div></a>
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                        </div>
+                        <div class="swiper-button-next m-icons m-icons-next-hover"></div>
+                        <div class="swiper-button-prev m-icons m-icons-forward-hover"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="h-section h-category-sec sec32">
+            <div class="container">
+                <div class="h-sec-top clearfix"><h2 class="h-subTit">专属推荐<span></span></h2></div>
+                <div class="m-product-list  clearfix">
+                    {% for plate in menus %}
+                        {% if plate.plate_id >= 13 %}
+                            <a href="detail?id={{ plate.id }}"><div class="m-goods-item-container first pro-item-category" data-src="/detail?gid=105565"
+                                 data-target="_blank" style="margin: 2px">
+                                <div class="category-img-container">
+                                    <div class="product-img">
+                                        <div class="m-placeholder"
+                                             style="padding: 45px 70px 28px; width: 124px; height: 125px;">
+                                            <img src="{{ plate.image }}"
+                                                 data-src="{{ plate.image }}"
+                                                 alt="智能音箱伴侣（小爱触屏音箱版）"
+                                                 style="height: 125px; width: 125px; margin-left: -0.5px;">
+                                        </div>
+                                    </div>
+                                    <p class="pro-desc">{{ plate.content }}</p></div>
+                                <div class="category-box">
+                                    <p class="pro-info" title="突破二位转换器">{{ plate.title }}</p>
+                                    <p class="pro-price"><span class="pro-unit">¥</span><span
+                                            class="m-num">{{ plate.price }}</span></p></div>
+                            </div></a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+{% endblock %}

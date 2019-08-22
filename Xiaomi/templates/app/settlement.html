@@ -1,0 +1,91 @@
+{% extends 'app/bash.html' %}
+{% block settlement %}
+        <div class="express-append">
+            <div class="wrapper">
+                <div class="m-secondary-navigator"><span><a href="/index">首页</a></span><span><a
+                        href="/index/shopping_cart">购物车</a></span><span><a
+                        href="#">确认页</a></span>
+                </div>
+                <div>
+                    <div class="address">
+                        <div class="title">收货地址</div>
+                        <div class="clearfix list">
+                            <div class="address-list ">
+                                <div class="address-list ">
+                                    <div class="address-item first unselected toAddAddress">
+                                        <div class="addIcon"><a class="m-icons m-icons-addAddress " data-src=""
+                                                                href="javascript:;"></a></div>
+                                        <div class="addAds">添加新地址</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="moreAddress"><span class="txt">显示更多收货地址</span><a
+                                class="m-icons m-icons- m-icons-down1" data-src="" href="javascript:;"></a></div>
+                    </div>
+                    <div class="quick-payment">
+                        <div class="form-item"><span class="left-label">支付方式</span><span class="desc">在线支付</span></div>
+                        <div class="form-item"><span class="left-label">配送方式</span><span class="desc">快递配送</span></div>
+                    </div>
+                    <div>
+                        <div class="merchant clearfix">
+                            <div class="merchant-info clearfix">
+                                <div class="icon"><img class=""
+                                                       src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAS1BMVEUAAAD/bAD/pAD/bAD/bAD/awD/awD/awD/bQD/bwD/awD/awD/bAD/cAD/bAD/bAD/bAD/bAD/awD/bAD/awD/bQD/bAD/cwD/awD8a4lAAAAAGHRSTlMAhgKzQHI54i8l9c5nKe3s17+pk3kcGhQhM1svAAAAd0lEQVRIx+3T2wqAIAyA4VrZQe182vs/aSwhtEQUvNx/ufFdCK7guLxJ/CeVALMtkXIA+luORIAKEgHuqWCCAFCNlW6NGAKgckbXiFQdDYotFYg4cPYUxAPz1o4Bgy+Y3ysQWX+rpMnqAo1U4wfw5AIztLYcF+oG6Osw671b9/4AAAAASUVORK5CYII="
+                                                       data-src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAMAAABg3Am1AAAAS1BMVEUAAAD/bAD/pAD/bAD/bAD/awD/awD/awD/bQD/bwD/awD/awD/bAD/cAD/bAD/bAD/bAD/bAD/awD/bAD/awD/bQD/bAD/cwD/awD8a4lAAAAAGHRSTlMAhgKzQHI54i8l9c5nKe3s17+pk3kcGhQhM1svAAAAd0lEQVRIx+3T2wqAIAyA4VrZQe182vs/aSwhtEQUvNx/ufFdCK7guLxJ/CeVALMtkXIA+luORIAKEgHuqWCCAFCNlW6NGAKgckbXiFQdDYotFYg4cPYUxAPz1o4Bgy+Y3ysQWX+rpMnqAo1U4wfw5AIztLYcF+oG6Osw671b9/4AAAAASUVORK5CYII="
+                                                       alt="小米自营" style="width: 30px; height: 30px;"></div>
+                                <span class="name">小米自营</span><span class="threshold"></span></div>
+                            <div class="merchant-spread">
+                                <div class="good-container clearfix"><p class="pro-support"><a
+                                        class="m-icons m-icons-service " data-src="" href="javascript:;"></a>支持7天无理由退货
+                                </p><span class="img"><img class=""
+                                                           src="./结算-小米有品_files/6344a4e9fa695b00d439e1c3581d514c.png"
+                                                           data-src="https://img.youpin.mi-img.com/800_pic/6344a4e9fa695b00d439e1c3581d514c.png?t=webp"
+                                                           alt="" style="width: 50px; height: 50px;"></span><span
+                                        class="name"><span class="product-name">小米AI音箱</span></span><span class="total"><span
+                                        class="">￥</span><span class="txt">249.00</span></span><span class="price">249.00元×1</span>
+                                </div>
+                                <div class="form-invioce-item">
+                                    <div class="form-item no-border"><span class="left-label">发票类型</span>
+                                        <div class="select">
+                                            <div class="option-list"><span class="option ">不开发票</span><span
+                                                    class="option active">电子发票</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-item"><span class="left-label">发票抬头</span>
+                                        <div class="select">
+                                            <div class="option-list"><span class="option ">个人</span><span
+                                                    class="option ">企业</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="invoice-add"></div>
+                                    <div class="form-invoice-pro"><a
+                                            href="https://home.mi.com/app/shop/content?id=o6448d039aa15c092"
+                                            rel="noopener noreferrer" target="_blank">常见发票问题&gt;&gt;</a></div>
+                                </div>
+                                <div class="form-item"><span class="left-label">买家留言</span><span
+                                        class="select"><textarea type="text" class="userMessage marginBottom"
+                                                                 placeholder="填写内容需与商家协商并确认，45字以内"
+                                                                 maxlength="45"></textarea></span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkout-coupons-con"><span>无可用优惠券</span></div>
+                    <div class="checkout-summary clearfix">
+                        <div class="check-freeInfo fr">
+                            <div class="freeInfo-item"><span class="freeInfo-key">商品总价：</span><span
+                                    class="freeInfo-value">249.00元</span></div>
+                            <div class="freeInfo-item fee-map-item "><span class="freeInfo-key">运费 ：</span><span
+                                    class="freeInfo-value">0.00元</span></div>
+                            <div class="freeInfo-item"><span class="freeInfo-key">优惠：</span><span
+                                    class="freeInfo-value">0.00元</span></div>
+                            <div class="total"><span class="freeInfo-key">合计：</span><span
+                                    class="freeInfo-value">￥249.00</span></div>
+                        </div>
+                    </div>
+                    <div class="bottom-pay"><a class="m-btns m-btn-middle m-btn-brown" href="javascript:;">去下单</a></div>
+                </div>
+            </div>
+            <div class="m-toast-group m-toast-top-center"></div>
+        </div>
+{% endblock %}

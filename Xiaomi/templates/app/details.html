@@ -1,0 +1,209 @@
+{% extends 'app/bash.html' %}
+{% block detail %}
+    <div class="detail" style="">
+        <div class="container" style="">
+            <div>
+                <div class="header clearfix">
+                    {% for detail in details %}
+                        {% if detail.id == parameter_id %}
+                            <div class="banner clearfix">
+                                <div class="main fl">
+                                    <img src="{{ detail.image }}">
+                                </div>
+                                <div class="thumb fr" style="display: block;">
+                                    {% for im in image %}
+                                        {% if im.id == parameter_id %}
+                                            <div class="thumb-container" style="top: 0px;">
+                                                <div class="thumb-pic" style="border-color: rgb(132, 95, 63);"><img
+                                                        src="{{ im.image_1 }}">
+                                                </div>
+                                                <div class="thumb-pic" style="border-color: rgb(236, 236, 236);"><img
+                                                        src="{{ im.image_2 }}"></div>
+                                                <div class="thumb-pic" style="border-color: rgb(236, 236, 236);"><img
+                                                        src="{{ im.image_3 }}"></div>
+                                                <div class="thumb-pic" style="border-color: rgb(236, 236, 236);"><img
+                                                        src="{{ im.image_4 }}"></div>
+                                            </div>
+                                        {% endif %}
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                    {% for detail in details %}
+                        {% if detail.id == parameter_id %}
+                            <div class="sku-container">
+                                <div class="name clearfix">
+                                    <div class="good-name fl">{{ detail.title }}</div>
+                                </div>
+                                <div class="summary">{{ detail.description }}</div>
+                                <div class="promotion-box"></div>
+                                <div class="card">
+                                    <div class="price-line"><h5 class="sku-title">售价</h5>
+                                        <div class="price"><span class="money-symbol">¥</span>
+                                            <span class="value">{{ detail.price }}</span>
+                                        </div>
+                                    </div>
+                                    <div class="service-line"><h5 class="sku-title">服务</h5>
+                                        <div class="introduce-container"><p class="icon">!</p>
+                                            <div class="content ">
+                                                <div class="cardmodal-outer-container"
+                                                     style="width: 500px; left: -20px; top: -20px;">
+                                                    <div class="inner-container"
+                                                         style="width: 500px; left: 20px; top: 20px;">
+                                                        <div class="container" style="width: 494px;">
+                                                            <div class="content-main"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="size">
+                                                        <div class="content-main"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="service">
+                                            <div class="service-item"><a class="m-icons m-icons-service " data-src=""
+                                                                         href="javascript:;"></a><span
+                                                    class="service-item-text">包邮</span></div>
+                                            <div class="service-item"><a class="m-icons m-icons-service " data-src=""
+                                                                         href="javascript:;"></a><span
+                                                    class="service-item-text">小米自营</span></div>
+                                            <div class="service-item"><a class="m-icons m-icons-service " data-src=""
+                                                                         href="javascript:;"></a><span
+                                                    class="service-item-text">7天无理由</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="address-line"><h5 class="sku-title">配送区域</h5>
+                                    <div class="address">
+                                        {% for im in image %}
+                                            {% if im.id == parameter_id %}
+                                                <div><span>{{ im.delivery }}</span><span>&nbsp;有货</span><a>修改</a></div>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </div>
+                                </div>
+                                <div>
+                                    <div style="overflow: hidden; padding: 0px 0px 12px;"></div>
+                                    <div class="count-line"><h5 class="sku-title count-title">数量</h5>
+                                        <div class="count-container">
+                                            <div>
+                                                {% for im in image %}
+                                                    {% if im.id == parameter_id %}
+                                                        <div class="minus-btn"><a class="m-icons m-icons-reduce "
+                                                                                  data-src=""
+                                                                                  href="javascript:;"></a>
+                                                        </div><input type="text" value="{{ im.quantity }}"
+                                                                     class="count-input">
+                                                        <div class="minus-btn-active"><a
+                                                                class="m-icons m-icons-add-active "
+                                                                data-src="" href="javascript:;"></a></div>
+                                                    {% endif %}
+                                                {% endfor %}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-line">
+                                    <div class="buy-btn-container"><a class="m-btns m-btn-middle m-btn-brown"
+                                                                      href="shopping_cart">加入购物车</a></div>
+                                    <div class="favor-btn ">
+                                        <div><a class="m-icons m-icons-collection " data-src="" href="javascript:;"></a>
+                                            <p>收藏</p></div>
+                                    </div>
+                                    <div class="faver-service-btn favor-btn ">
+                                        <div><a class="m-icons m-icons-service-detail " data-src=""
+                                                href="javascript:;"></a>
+                                            <p>客服</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="detail-content">
+                    <div class="info fl">
+                        <div class="nav-title">
+                            <ul class="info-nav clearfix">
+                                <li class="info-nav-item" style="border-right-color: rgb(204, 204, 204); width: 128px;">
+                                    概述
+                                </li>
+                                <li class="info-nav-item" style="border-right-color: transparent; width: 128px;" onclick="">评论</li>
+                            </ul>
+                            <div class="nav-arr-container">
+                                <div class="nav-arr" style="left: 0px; width: 128px;"></div>
+                            </div>
+                        </div>
+                        <div class="main-body">
+                            <div><img
+                                    src="https://shop.io.mi-img.com/app/shop/img?id=shop_3ab2f9cfb47e955d53a78e50a7636e34.jpeg&amp;w=720&amp;h=1192"
+                                    style="width: 100%;"><img
+                                    src="https://shop.io.mi-img.com/app/shop/img?id=shop_39f31c9ecbcfd97a7aa610eeaad30292.jpeg&amp;w=720&amp;h=551"
+                                    style="width: 100%;"><img
+                                    src="https://shop.io.mi-img.com/app/shop/img?id=shop_244704e76087962dbf68bc391d300441.jpeg&amp;w=720&amp;h=763"
+                                    style="width: 100%;"><img
+                                    src="https://shop.io.mi-img.com/app/shop/img?id=shop_7e11644042c617669cb7717fc82a276f.jpeg&amp;w=720&amp;h=549"
+                                    style="width: 100%;"><img
+                                    src="https://shop.io.mi-img.com/app/shop/img?id=shop_8e740f087f2ab43e14f3807a13883b8d.jpeg&amp;w=720&amp;h=767"
+                                    style="width: 100%;"><img
+                                    src="https://shop.io.mi-img.com/app/shop/img?id=shop_730e4d8c6e2bd42af75295253a63e092.jpeg&amp;w=720&amp;h=552"
+                                    style="width: 100%;"><img
+                                    src="https://shop.io.mi-img.com/app/shop/img?id=shop_d6d591be8bfb25f2c1bc7676c787f2ba.jpeg&amp;w=720&amp;h=756"
+                                    style="width: 100%;"><img
+                                    src="https://shop.io.mi-img.com/app/shop/img?id=shop_045a0b75a478b0157d2ac4b82cc166a9.jpeg&amp;w=720&amp;h=555"
+                                    style="width: 100%;"><img
+                                    src="https://shop.io.mi-img.com/app/shop/img?id=shop_b7f7cb6756c718569f601a0d77070be0.jpeg&amp;w=720&amp;h=763"
+                                    style="width: 100%;"><img
+                                    src="https://shop.io.mi-img.com/app/shop/img?id=shop_adc6ac9dee8089f3ef422193cbbc46dc.jpeg&amp;w=720&amp;h=1587"
+                                    style="width: 100%;"><img
+                                    src="https://shop.io.mi-img.com/app/shop/img?id=shop_fa261f9bf6d67b2f5d4bf946793fe87a.jpeg&amp;w=720&amp;h=423"
+                                    style="width: 100%;"><img
+                                    src="https://shop.io.mi-img.com/app/shop/img?id=shop_0a39c0d0e3cea978cede48de5e0e9ee1.jpeg&amp;w=720&amp;h=554"
+                                    style="width: 100%;"><img
+                                    src="https://shop.io.mi-img.com/app/shop/img?id=shop_7e125e5cc37bcb2e8ac0034244d97656.jpeg&amp;w=716&amp;h=679"
+                                    style="width: 100%;"><img
+                                    src="https://shop.io.mi-img.com/app/shop/img?id=shop_88b44e395fb1b74a0ab07452e4ed56de.jpeg&amp;w=720&amp;h=551"
+                                    style="width: 100%;"><img
+                                    src="https://shop.io.mi-img.com/app/shop/img?id=shop_329084d60823460fadc2722896b50cb6.jpeg&amp;w=720&amp;h=1219"
+                                    style="width: 100%;"><img
+                                    src="https://shop.io.mi-img.com/app/shop/img?id=shop_e452c83ff8bdcbc5f053ac10aafab823.jpeg&amp;w=720&amp;h=769"
+                                    style="width: 100%;"><img
+                                    src="https://img.youpin.mi-img.com/editor1/34d9309abc25227d26891dddcdf946d0.png?w=1080&amp;h=510"
+                                    style="width: 100%;"></div>
+                        </div>
+                    </div>
+                    <div class="best">
+                        <div class="flagship">
+                            <div class="icon-container"><img
+                                    src="https://img.youpin.mi-img.com/youpinoper/shop_72bacf474dfad998341d995c6fcb9db1.jpg"
+                                    height="100%">
+                                <div class="title-container"><h6 title="小米自营产品">小米自营产品</h6>
+                                    <p>为发烧而生</p></div>
+                            </div>
+                        </div>
+                        <div><h2 class="recommend-title"><span class="special-line"></span>相关推荐<span
+                                class="special-line"></span></h2>
+                            <div class="best-product">
+                                <div class="image-container">
+                                    <div class="m-product-image-container undefined"
+                                         data-src="https://img.youpin.mi-img.com/800_pic/5a153ad294af625bbb325148bf01b59d.png"
+                                         style="width: 260px; height: 197px;">
+                                        <div class="img-container"
+                                             style="padding: 22px 53px; width: 154px; height: 153px;"><img
+                                                src="https://img.youpin.mi-img.com/goods/fshop_cdcc7ec5ed82485c78f33f6897a76673.jpeg?_s=ks3"
+                                                data-src="https://img.youpin.mi-img.com/800_pic/5a153ad294af625bbb325148bf01b59d.png"
+                                                alt="小米小爱音箱HD"
+                                                style="height: 154px; width: 154px; margin-top: -0.5px;"></div>
+                                    </div>
+                                </div>
+                                <p title="360°全向音效，澎湃低音，精准拾音，小爱智能语音交互">360°全向音效，澎湃低音，精准拾音，小爱智能语音交互</p><h5>
+                                小米小爱音箱HD</h5><h4><span class="dollar">￥</span><span class="price">599</span></h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="m-toast-group m-toast-top-center"></div>
+        </div>
+    </div>
+{% endblock %}

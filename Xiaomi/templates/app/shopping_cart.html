@@ -1,0 +1,17 @@
+{% extends 'app/bash.html' %}
+{% block shopping_cart %}
+        <div class="express-append">
+            <div class="container">
+                <div class="m-secondary-navigator"><span><a href="https://www.xiaomiyoupin.com/">首页</a></span><span><a
+                        href="https://www.xiaomiyoupin.com/cart#">购物车</a></span></div>
+            </div>
+            <div class="container">
+                <div class="no-good-container">
+                    <div class="m-exception  m-no-cart">
+                        <div class="e-img"></div>
+                        <p class="e-info">购物车还是空的</p></div>
+                    <div class="btn-wrap"><a class="m-btn-default m-btns m-btn-gray" href="/index">继续逛</a></div>
+                </div>
+            </div>
+        </div>
+{% endblock %}

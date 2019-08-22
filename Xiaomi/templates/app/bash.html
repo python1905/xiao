@@ -1,0 +1,390 @@
+{#{% load static %}#}
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://www.xiaomiyoupin.com/ -->
+<html lang="zh-CN" style="font-size: 0px;">
+<head>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            position: relative; /*margin:20px auto*/;
+            width: 859px;
+            height: 358px;
+        }
+
+        #wrap .banner {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 2s;
+        }
+
+        #wrap .tab {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+        }
+
+        #wrap .tab span {
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            margin: 3px;
+            background: rgba(105, 105, 105, 0.5);
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid #887B6E;
+        }
+
+        #wrap .tab span.on {
+            background: #E2CEB7;
+        }
+
+        #wrap .tab span:hover {
+            background: #E2CEB7;
+        }
+
+                .swiper-button-next-test {
+    right: 10px
+}
+.h-new-sec .swiper-button-next-test, .h-new-sec .swiper-button-prev-test {
+    margin-top: -28px
+}
+        .swiper-button-next-test, .swiper-button-prev-test {
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer
+}
+        .m-icons-next-hover-test {
+    width: 38px;
+    height: 38px;
+    background-position: 0 -1840px
+}
+        .m-icons-test {
+    display: inline-block;
+    background-image: url(https://shop.io.mi-img.com/static/h5/static3/media/yp-icons.2bf57ccf.png)
+}
+        .swiper-button-next-test.swiper-button-disabled, .swiper-button-prev-test.swiper-button-disabled {
+    opacity: .35;
+    cursor: auto
+}
+        .swiper-button-next-test {
+    right: 10px
+}
+.swiper-button-prev-test {
+    left: 10px
+}
+        .m-icons-forward-hover-test {
+    width: 38px;
+    height: 38px;
+    background-position: 0 -1924px
+}
+        .m-icons-forward-hover-test:hover {
+    background-position: 0 -1798px
+}
+
+                .swiper-button-next-text {
+    right: 10px
+}
+.h-new-sec .swiper-button-next-text, .h-new-sec .swiper-button-prev-text {
+    margin-top: -28px
+}
+        .swiper-button-next-text, .swiper-button-prev-text {
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+    z-index: 10;
+    cursor: pointer
+}
+        .m-icons-next-hover-text {
+    width: 38px;
+    height: 38px;
+    background-position: 0 -1840px
+}
+        .m-icons-text {
+    display: inline-block;
+    background-image: url(https://shop.io.mi-img.com/static/h5/static3/media/yp-icons.2bf57ccf.png)
+}
+        .swiper-button-next-text.swiper-button-disabled, .swiper-button-prev-text.swiper-button-disabled {
+    opacity: .35;
+    cursor: auto
+}
+        .swiper-button-next-text {
+    right: 10px
+}
+.swiper-button-prev-text {
+    left: 10px
+}
+        .m-icons-forward-hover-text {
+    width: 38px;
+    height: 38px;
+    background-position: 0 -1924px
+}
+        .m-icons-forward-hover-text:hover {
+    background-position: 0 -1798px
+}
+    </style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <meta name="description"
+          content="小米有品是小米旗下精品生活电商平台，也是小米“新零售”战略的重要一环。依托小米生态链体系，延续小米的“爆品”模式，致力于将“小米式的性价比”延伸到更广泛的家居生活领域。">
+    <meta name="keywords"
+          content="小米旗下精品生活电商平台,小米旗下精品生活电商,小米电商,小米电商平台,小米精品电商,小米有品,米家有品,精品电商,小米商城,生活电商,小米众筹,小米手机系列小米Note 3,小米5X,小米MIX 2,品质家居,日用,食品,服饰,婴童,箱包">
+    <link rel="manifest" href="https://www.xiaomiyoupin.com/manifest.json">
+    <link rel="shortcut icon" href="https://shop.io.mi-img.com/static/h5/favicon.ico?v=1111">
+    <style>#cnzz_stat_icon_1267968936 {
+        display: none
+    }</style>
+    <title>小米有品</title>
+    <script src="/static/js/hm.js"></script>
+    <script src="/static/js/gettimestamp"></script>
+    <script type="text/javascript" src="/static/js/StatInfo.js"></script>
+    <script>window.zeptoCbs = [], window.registerAfterZepto = function (e) {
+        zeptoCbs.push(e)
+    }</script>
+    {#    <script type="text/javascript" src="/static/js/youpin-lib10.min.js" id="youpin-lib10"></script>#}
+    <script type="text/javascript" src="/static/js/routerinline.min.js" id="youpin-lib10"></script>
+    <script>var _appName = "Microsoft Internet Explorer",
+        _version = window.navigator.appVersion.split(";")[1].replace(/[ ]/g, "").replace("MSIE", "");
+    window.navigator.appName == _appName && parseInt(_version) < 10 && (window.location.href = "/error.html")</script>
+    <script>window.WebpSupport = !1;
+    var webP = new Image;
+    webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA", webP.onload = webP.onerror = function () {
+        window.WebpSupport = 2 === webP.height
+    }</script>
+    <link href="/static/css/main.20b21653.css" rel="stylesheet">
+    <script type="text/javascript" charset="utf-8" async src="/static/js/home.js"></script>
+    <script type="text/javascript" charset="utf-8" async="" src="/static/js/detail.a86515e5.chunk.js"></script>
+<script type="text/javascript" charset="utf-8" async="" src="/static/js/cart.3fd90c19.chunk.js"></script>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run.</noscript>
+<div id="root">
+    <div class="home-wrap">
+        <div class="m-site-top">
+            <div class="container clearfix">
+                <div class="fr">
+                    <div class="fl site-item m-user-con">
+                        <div class="m-no-login"><a href="https://www.xiaomiyoupin.com/#" class="m-safe-anchor">登录</a><a
+                                href="https://www.xiaomiyoupin.com/#" class="m-safe-anchor">注册</a></div>
+                    </div>
+                    <span class="fl m-line"></span>
+                    <div class="fl m-help"><a rel="noopener noreferrer" target="_blank"
+                                              href="https://www.xiaomiyoupin.com/help" class="m-safe-anchor">帮助中心</a>
+                    </div>
+                    <span class="fl m-line"></span>
+                    <div class="fl m-download site-item"><a href="https://www.xiaomiyoupin.com/download" target="_blank"
+                                                            class="m-safe-anchor h-icon-con"><span
+                            class="m-icons m-icons- h-icons h-app-icon m-icons-app" data-src="" href=""></span>下载
+                        APP</a></div>
+                    <span class="fl m-line"></span>
+                    <div class="fl m-clauses-con">
+                        <div class="m-clauses"><a rel="noopener noreferrer" target="_blank"
+                                                  href="https://www.xiaomiyoupin.com/#" class="m-safe-anchor">资质证照&nbsp;/&nbsp;协议规则</a><span
+                                class="m-icons m-icons-dropdown h-icons h-down-icon" data-src="" href=""></span></div>
+                        <div class="site-item-nav hidden">
+                            <ul class="site-nav">
+                                <li><a rel="nofollow" data-target="_blank" target="_blank" data-src="资质证照"
+                                       href="https://youpin.mi.com/app/shop/content?id=sb0b29039bf5892b5"
+                                       class="m-safe-anchor">资质证照</a></li>
+                                <li><a rel="nofollow" data-target="_blank" target="_blank" data-src="协议规则"
+                                       href="https://youpin.mi.com/app/shop/content?id=t58169039fac3a096"
+                                       class="m-safe-anchor">协议规则</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="m-header clearfix">
+            <div class="">
+                <div class="container">
+                    <div class="clearfix m-header-top">
+                        <a href="/index"><div class="m-logo m-tag-a" data-src="/"></div></a>
+                        <div class="m-card-wrap fr">
+                            <div class="m-card-mini"><a class="m-icons m-icons-cart-hover " data-src=""
+                                                        href="shopping_cart"></a></div>
+                        </div>
+                        <div class="m-search">
+                            <div class="search-form "><a class="m-icons m-icons-search-hover search-icon" data-src=""
+                                                         href="javascript:;"></a>
+                                <div class="m-autocomplete search-input-con"><input type="text" value=""
+                                                                                    placeholder="精品低至5折 赢816元神券"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% block index %}
+        {% endblock %}
+    {% block list %}
+    {% endblock %}
+    {% block detail %}
+    {% endblock %}
+    {% block shopping_cart %}
+    {% endblock %}
+    {% block settlement %}
+    {% endblock %}
+    <div class="m-footer">
+            <div class="container clearfix">
+                <div class="fl m-f-logo"><img src="/static/image/logo.d1484e61.png" alt="logo"></div>
+                <div class="f-info fr">
+                    <div class="f-icons"><a href="https://home.mi.com/app/shop/content?id=na056d0394b93a391"><img
+                            src="/static/image/f-logo.c6285587.png"></a></div>
+                    <div><p class="footer-item">
+                        <span>©xiaomiyoupin.com </span><span>苏B2-20180351 苏ICP备18025642号-1 </span><img
+                            src="/static/image/record-icon.d0289dc0.png" alt="logo"
+                            style="width: 15px; height: 15px; vertical-align: -3px;"><a
+                            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=32010502010244"
+                            target="_blank" rel="noopener noreferrer">苏公网安备 32010502010244号 </a></p>
+                        <p class="footer-item"><span>企业名称：有品信息科技有限公司 </span><a
+                                href="https://www.xiaomiyoupin.com/app/shop/content?id=qf58f1039488314e3"
+                                target="_blank" rel="noopener noreferrer">关于我们 </a><a
+                                href="https://zhaoshang.xiaomiyoupin.com/" target="_blank" rel="noopener noreferrer">入驻有品 </a>
+                        </p>
+                        <p class="footer-item"><a
+                                href="https://www.xiaomiyoupin.com/app/shop/content?id=s2426f03987ef05b5"
+                                target="_blank" rel="noopener noreferrer">小米有品平台运营主体变更公告 </a></p>
+                        <p class="footer-item"><span>南京市建邺区白龙江东街8号3栋9层 </span></p></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/static/js/main.js"></script>
+
+<script>function isXMYPHost(host) {
+    if (!host) {
+        host = window.location.host;
+    }
+    if (host && host.indexOf('xiaomiyoupin.com') !== -1) {
+        return true;
+    }
+    return false;
+}
+
+var _hmt = _hmt || [];
+(function () {
+    var hm = document.createElement("script");
+    let src = "/static/js/hm.js";
+    if (isXMYPHost()) {
+        src = "/static/js/hm.js";
+    }
+    hm.src = src;
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<script>
+    function add(menu_id) {
+        document.getElementsByName(menu_id)[0].className += ' show';
+    }
+
+    function adds() {
+        document.getElementsByClassName("nav-detail")[0].className += ' show';
+    }
+
+    function out() {
+        document.getElementsByClassName("nav-detail show")[0].classList.remove("show");
+    }
+
+</script>
+<script type="text/javascript">
+    var oBody = document.getElementsByTagName("body")[0];
+    var aBanner = document.getElementsByClassName("banner");
+    var aSpan = document.getElementsByClassName("tab")[0].getElementsByTagName("span");
+    {#var oNext = document.getElementsByClassName("next")[0];#}
+    var oNext = document.getElementsByClassName("swiper-button-next m-icons  m-icons-next-hover")[0];
+    var Oprev = document.getElementsByClassName("swiper-button-prev m-icons  m-icons-forward-hover")[0];
+    var Oon = document.getElementsByClassName("on")[0];
+    //初始化让第一张图片显示，和第一个原点显示
+    aBanner[0].style.opacity = "1";
+    aSpan[0].className = "on";
+
+    var num = 0;
+    for (var i = 0; i < aSpan.length; i++) {
+        aSpan[i].index = i;
+        aSpan[i].onclick = function () {  //点击小圆点图片相对应的进行切换
+            for (var j = 0; j < aSpan.length; j++) {
+                num = this.index;
+                aSpan[j].className = "";
+                aBanner[j].style.opacity = "0";
+            }
+            aSpan[num].className = "on";
+            aBanner[num].style.opacity = "1";
+        }
+        oNext.onclick = function () {//按下图片切换到后一张
+            for (var j = 0; j < aSpan.length; j++) {
+                if (aSpan[j].className == "on") {
+                    aSpan[j].className = "";
+                    aBanner[j].style.opacity = "0";
+                    j++;
+                    num++;
+                    if (j > 4) {
+                        j = 0;
+                    }
+                    aSpan[j].className = "on";
+                    aBanner[j].style.opacity = "1";
+
+                }
+            }
+        }
+
+        Oprev.onclick = function () {  //按下图片切换到前一张
+            for (var j = 0; j < aSpan.length; j++) {
+                if (aSpan[j].className == "on") {
+                    aSpan[j].className = "";
+                    aBanner[j].style.opacity = "0";
+                    j--;
+                    num--;
+                    if (j < 0) {
+                        j = 4;
+                    }
+                    aSpan[j].className = "on";
+                    aBanner[j].style.opacity = "1";
+
+                }
+            }
+        }
+    }
+
+    function Time() {/*设置定时器运行的函数*/
+        num++;
+        if (num < 5) {
+            for (var j = 0; j < aSpan.length; j++) {
+                aSpan[j].className = "";
+                aBanner[j].style.opacity = "0";
+            }
+            aSpan[num].className = "on";
+            aBanner[num].style.opacity = "1";
+        } else {
+            num = -1;
+        }
+    }
+
+    clearInterval(timer);
+    var timer = setInterval("Time()", 2000);
+    /*调用定时器*/
+
+    {#oBody.onmouseover = function () {/*鼠标引入，清除定时器，轮播图停止*/#}
+    {#    clearInterval(timer);#}
+
+    {#oBody.onmouseout = function () {/*鼠标移出，重新调用定时器，轮播图开始*/#}
+    {#    clearInterval(timer);#}
+    {#    timer = setInterval("Time()", 2000);#}
+
+</script>
+
+<img src="/static/image/0.gif" style="display: none;"></body>
+</html>
