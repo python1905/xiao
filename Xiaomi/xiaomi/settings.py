@@ -155,7 +155,7 @@ SMSCONFIG = {
 
 # session配置
 # 过期时间设置
-maxage = 60
+maxage = 3*24*3600
 
 # 文件上传路径
 MEDIA_ROOT = os.path.join(BASE_DIR, 'static/img')

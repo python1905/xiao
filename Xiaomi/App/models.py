@@ -16,9 +16,9 @@ class User(models.Model):
     orderformid = models.IntegerField(null=True)
     collectid = models.IntegerField(null=True)
     site = models.IntegerField(null=True)
-    portrait = models.ImageField(upload_to='file')
-    username = models.CharField(max_length=200)
-    gender = models.IntegerField(default=0, choices=(('0', '女'), ('1', '男')))
+    portrait = models.ImageField(upload_to='file', null=True)
+    username = models.CharField(max_length=200, null=True)
+    gender = models.IntegerField(default=0, choices=(('0', '女'), ('1', '男')), null=True)
 
     class Meta:
         managed = True
