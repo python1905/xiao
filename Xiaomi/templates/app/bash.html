@@ -4,6 +4,10 @@
 <html lang="zh-CN" style="font-size: 0px;">
 <head>
 
+    {% block js1 %}
+    {% endblock %}
+
+
     <style type="text/css">
         * {
             margin: 0;
@@ -179,31 +183,31 @@
                         <div class="m-no-login"><a href="{% url 'app:login' %}" class="m-safe-anchor">登录</a><a
                                 href="{% url 'app:enroll'%}" class="m-safe-anchor">注册</a></div>
                     </div>
-                    <span class="fl m-line"></span>
-                    <div class="fl m-help"><a rel="noopener noreferrer" target="_blank"
-                                              href="https://www.xiaomiyoupin.com/help" class="m-safe-anchor">帮助中心</a>
-                    </div>
-                    <span class="fl m-line"></span>
-                    <div class="fl m-download site-item"><a href="https://www.xiaomiyoupin.com/download" target="_blank"
-                                                            class="m-safe-anchor h-icon-con"><span
-                            class="m-icons m-icons- h-icons h-app-icon m-icons-app" data-src="" href=""></span>下载
-                        APP</a></div>
-                    <span class="fl m-line"></span>
-                    <div class="fl m-clauses-con">
-                        <div class="m-clauses"><a rel="noopener noreferrer" target="_blank"
-                                                  href="https://www.xiaomiyoupin.com/#" class="m-safe-anchor">资质证照&nbsp;/&nbsp;协议规则</a><span
-                                class="m-icons m-icons-dropdown h-icons h-down-icon" data-src="" href=""></span></div>
-                        <div class="site-item-nav hidden">
-                            <ul class="site-nav">
-                                <li><a rel="nofollow" data-target="_blank" target="_blank" data-src="资质证照"
-                                       href="https://youpin.mi.com/app/shop/content?id=sb0b29039bf5892b5"
-                                       class="m-safe-anchor">资质证照</a></li>
-                                <li><a rel="nofollow" data-target="_blank" target="_blank" data-src="协议规则"
-                                       href="https://youpin.mi.com/app/shop/content?id=t58169039fac3a096"
-                                       class="m-safe-anchor">协议规则</a></li>
-                            </ul>
-                        </div>
-                    </div>
+{#                    <span class="fl m-line"></span>#}
+{#                    <div class="fl m-help"><a rel="noopener noreferrer" target="_blank"#}
+{#                                              href="https://www.xiaomiyoupin.com/help" class="m-safe-anchor">帮助中心</a>#}
+{#                    </div>#}
+{#                    <span class="fl m-line"></span>#}
+{#                    <div class="fl m-download site-item"><a href="https://www.xiaomiyoupin.com/download" target="_blank"#}
+{#                                                            class="m-safe-anchor h-icon-con"><span#}
+{#                            class="m-icons m-icons- h-icons h-app-icon m-icons-app" data-src="" href=""></span>下载#}
+{#                        APP</a></div>#}
+{#                    <span class="fl m-line"></span>#}
+{#                    <div class="fl m-clauses-con">#}
+{#                        <div class="m-clauses"><a rel="noopener noreferrer" target="_blank"#}
+{#                                                  href="https://www.xiaomiyoupin.com/#" class="m-safe-anchor">资质证照&nbsp;/&nbsp;协议规则</a><span#}
+{#                                class="m-icons m-icons-dropdown h-icons h-down-icon" data-src="" href=""></span></div>#}
+{#                        <div class="site-item-nav hidden">#}
+{#                            <ul class="site-nav">#}
+{#                                <li><a rel="nofollow" data-target="_blank" target="_blank" data-src="资质证照"#}
+{#                                       href="https://youpin.mi.com/app/shop/content?id=sb0b29039bf5892b5"#}
+{#                                       class="m-safe-anchor">资质证照</a></li>#}
+{#                                <li><a rel="nofollow" data-target="_blank" target="_blank" data-src="协议规则"#}
+{#                                       href="https://youpin.mi.com/app/shop/content?id=t58169039fac3a096"#}
+{#                                       class="m-safe-anchor">协议规则</a></li>#}
+{#                            </ul>#}
+{#                        </div>#}
+{#                    </div>#}
                 </div>
             </div>
         </div>
@@ -218,49 +222,56 @@
                                 style="background: url('/static/img/{{ photo }}') center center / 100% no-repeat; border-radius: 50%;"></span><span
                                 class="m-username">{{ username }}</span><span
                                 class="m-icons m-icons-dropdown h-icons h-down-icon" data-src="" href=""></span></a>
-                            <div class="site-item-nav hidden">
-                                <ul class="site-nav user-nav">
-                                    <li><a rel="nofollow" data-target="_blank" data-src="/personal-center/orders"
-                                           href="#" class="m-safe-anchor">我的订单</a></li>
-                                    <li><a rel="nofollow" data-target="_blank"
-                                           data-src="//app.youpin.mi.com/r/afterServiceList" href="#"
-                                           class="m-safe-anchor">退款/售后</a></li>
-                                    <li><a rel="nofollow" data-target="_blank" data-src="/personal-center/assets"
-                                           href="#" class="m-safe-anchor">我的资产</a></li>
-                                    <li><a rel="nofollow" data-target="_blank" data-src="/personal-center/collections"
-                                           href="#" class="m-safe-anchor">我的收藏</a></li>
-                                    <li><a rel="nofollow" data-target="_blank" data-src="/personal-center/address"
-                                           href="#" class="m-safe-anchor">地址管理</a></li>
-                                    <li><a rel="nofollow" href="javascript:;">退出登录</a></li>
-                                </ul>
-                            </div>
+{#                            <div class="site-item-nav hidden">#}
+{#                                <ul class="site-nav user-nav">#}
+{#                                    <li><a rel="nofollow" data-target="_blank" data-src="/personal-center/orders"#}
+{#                                           href="#" class="m-safe-anchor">我的订单</a></li>#}
+{#                                    <li><a rel="nofollow" data-target="_blank"#}
+{#                                           data-src="//app.youpin.mi.com/r/afterServiceList" href="#"#}
+{#                                           class="m-safe-anchor">退款/售后</a></li>#}
+{#                                    <li><a rel="nofollow" data-target="_blank" data-src="/personal-center/assets"#}
+{#                                           href="#" class="m-safe-anchor">我的资产</a></li>#}
+{#                                    <li><a rel="nofollow" data-target="_blank" data-src="/personal-center/collections"#}
+{#                                           href="#" class="m-safe-anchor">我的收藏</a></li>#}
+{#                                    <li><a rel="nofollow" data-target="_blank" data-src="/personal-center/address"#}
+{#                                           href="#" class="m-safe-anchor">地址管理</a></li>#}
+{#                                    <li><a rel="nofollow" href="javascript:;">退出登录</a></li>#}
+{#                                </ul>#}
+{#                            </div>#}
                         </div>
                     </div>
                     <span class="fl m-line"></span>
                     <div class="fl m-help"><a rel="noopener noreferrer" target="_blank"
-                                              href="https://www.xiaomiyoupin.com/help" class="m-safe-anchor">帮助中心</a>
+                                              href="{% url 'app:user' %}" class="m-safe-anchor">个人信息</a>
                     </div>
                     <span class="fl m-line"></span>
-                    <div class="fl m-download site-item"><a href="/download" target="_blank"
-                                                            class="m-safe-anchor h-icon-con"><span
-                            class="m-icons m-icons- h-icons h-app-icon m-icons-app" data-src="" href=""></span>下载
-                        APP</a></div>
-                    <span class="fl m-line"></span>
-                    <div class="fl m-clauses-con">
-                        <div class="m-clauses"><a rel="noopener noreferrer" target="_blank" href="#"
-                                                  class="m-safe-anchor">资质证照&nbsp;/&nbsp;协议规则</a><span
-                                class="m-icons m-icons-dropdown h-icons h-down-icon" data-src="" href=""></span></div>
-                        <div class="site-item-nav hidden">
-                            <ul class="site-nav">
-                                <li><a rel="nofollow" data-target="_blank" target="_blank" data-src="资质证照"
-                                       href="https://youpin.mi.com/app/shop/content?id=sb0b29039bf5892b5"
-                                       class="m-safe-anchor">资质证照</a></li>
-                                <li><a rel="nofollow" data-target="_blank" target="_blank" data-src="协议规则"
-                                       href="https://youpin.mi.com/app/shop/content?id=t58169039fac3a096"
-                                       class="m-safe-anchor">协议规则</a></li>
-                            </ul>
-                        </div>
+                    <div class="fl m-help"><a rel="noopener noreferrer" target="_blank"
+                                              href="{% url 'app:logistics' %}" class="m-safe-anchor">物流管理</a>
                     </div>
+                    <div class="fl m-help"><a rel="noopener noreferrer" target="_blank"
+                                              href="{% url 'app:login_out' %}" class="m-safe-anchor">退出登录</a>
+                    </div>
+{#                    <span class="fl m-line"></span>#}
+{#                    <div class="fl m-download site-item"><a href="/download" target="_blank"#}
+{#                                                            class="m-safe-anchor h-icon-con"><span#}
+{#                            class="m-icons m-icons- h-icons h-app-icon m-icons-app" data-src="" href=""></span>我的收藏#}
+{#                        </a></div>#}
+{#                    <span class="fl m-line"></span>#}
+{#                    <div class="fl m-clauses-con">#}
+{#                        <div class="m-clauses"><a rel="noopener noreferrer" target="_blank" href="#"#}
+{#                                                  class="m-safe-anchor">我的订单</a><span#}
+{#                                class="m-icons m-icons-dropdown h-icons h-down-icon" data-src="" href=""></span></div>#}
+{#                        <div class="site-item-nav hidden">#}
+{#                            <ul class="site-nav">#}
+{#                                <li><a rel="nofollow" data-target="_blank" target="_blank" data-src="资质证照"#}
+{#                                       href="https://youpin.mi.com/app/shop/content?id=sb0b29039bf5892b5"#}
+{#                                       class="m-safe-anchor">资质证照</a></li>#}
+{#                                <li><a rel="nofollow" data-target="_blank" target="_blank" data-src="协议规则"#}
+{#                                       href="https://youpin.mi.com/app/shop/content?id=t58169039fac3a096"#}
+{#                                       class="m-safe-anchor">协议规则</a></li>#}
+{#                            </ul>#}
+{#                        </div>#}
+{#                    </div>#}
                 </div>
             </div>
         </div>
@@ -286,6 +297,8 @@
                 </div>
             </div>
         </div>
+    {% block gou %}
+    {% endblock %}
         {% block index %}
         {% endblock %}
     {% block list %}
@@ -446,5 +459,10 @@ var _hmt = _hmt || [];
 
 </script>
 
-<img src="/static/image/0.gif" style="display: none;"></body>
+<img src="/static/image/0.gif" style="display: none;">
+
+
+{% block js %}
+{% endblock %}
+</body>
 </html>

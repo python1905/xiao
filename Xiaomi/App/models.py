@@ -1,10 +1,10 @@
-# from django.contrib.auth.hashers import make_password, check_password
+from django.contrib.auth.hashers import make_password, check_password
 import hashlib
 
 from django.contrib.auth.hashers import make_password, check_password
 from django.db import models
-
-# Create your models here.
+#
+ # Create your models here.
 from django.http import request
 
 
@@ -23,6 +23,15 @@ class User(models.Model):
     class Meta:
         managed = True
         db_table = 'mi_user'
+
+
+class Platen(models.Model):
+    id = models.AutoField(primary_key=True)
+    platename = models.CharField(max_length=300, null=True)
+    xid = models.CharField(max_length=255, null=True)
+
+    class Meta:
+        db_table = 'mi_platen'
 
     # @property
     # def password(self):
@@ -65,7 +74,8 @@ class Index(models.Model):
     big_image = models.CharField(max_length=100,null=True)
 
     class Meta:
-        db_table = 'Xiaomi_index'
+        db_table = 'xiaomi_index'
+
 
 class Paymenu(models.Model):
     id = models.AutoField(primary_key=True)
@@ -74,7 +84,7 @@ class Paymenu(models.Model):
     pid = models.ImageField(null=True)
 
     class Meta:
-        db_table = 'xiaomi_PayTitle'
+        db_table = 'xiaomi_paytitle'
 
 class List(models.Model):
     id = models.AutoField(primary_key=True)

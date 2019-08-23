@@ -14,12 +14,14 @@ from App.verification_code import send_sms
 from django.urls import reverse
 
 from App.forms import UserForm, PW, UserName
-from App.models import User, Paymenu, List, Index, Detail
+from App.models import User, Paymenu, List, Index, Detail, Platen
 from xiaomi.settings import maxage, MEDIA_ROOT
 
 # 登录页面
 def login(request):
+
     return render(request, 'app/login.html')
+
 
 # 验证用户登录
 def verify_login(request):
@@ -28,26 +30,30 @@ def verify_login(request):
     password1 = hashlib.sha1(password.encode()).hexdigest()
     print(password1)
     # 查询出数据库是否有这个用户名  返回的就是一个的字典
-    user1 = User.objects.values('password', 'username', 'portrait').filter(Q(cellphone=user)|Q(xiaomiid=user)).first()
+    user1 = User.objects.values('password', 'username', 'portrait', 'cellphone').filter(Q(cellphone=user)|Q(xiaomiid=user)).first()
     # print(user1, type(user1))
     # print(user1['password'])
 
     if user1:
         if user1['password'] == password1:
-            # 将user写入session用于判断用户是否登录
-            request.session['user'] = user
+            # 将手机号写入session用于判断用户是否登录
+            request.session['user'] = user1['cellphone']
+            # 设置过期时间
+            request.session.set_expiry(maxage)
+
             # 将页面展示的信息从数据库取出来
             username = user1['username']
             photo = user1['portrait']
-            return render(request, 'app/index.html', {'username': username, 'photo': photo})
+            # return render(request, 'app/index.html', {'username': username, 'photo': photo})
+            return redirect(reverse('app:index'), {'username': username, 'photo': photo})
 
     return render(request, 'app/login.html', {'error': '·  密码或用户名错误'})
 
 
 # 退出登录
-# def loginout(request):
-#     logout()
-#     return render(request, 'app/index')
+def login_out(request):
+    request.session.flush()
+    return redirect(reverse('app:index'))
 
 
 
@@ -130,11 +136,26 @@ def password(request):
 
 # 头像设置
 def user(request):
-    photo = User.objects.values('portrait', 'xiaomiid', 'username').filter(cellphone='13754834137').first()
+    phone = request.session.get('user')
+    # 查出当前手机号的模型对象
 
-    photo1 = photo['portrait']
-    xiaomiid = photo['xiaomiid']
-    username = photo['username']
+    photo2 = User.objects.values('portrait', 'xiaomiid', 'username', 'gender').filter(cellphone=phone).first()
+
+    photo1 = photo2['portrait']
+    xiaomiid = photo2['xiaomiid']
+    username = photo2['username']
+    gender1 = photo2['gender']
+    print(88888888888888888888888888888888888888888)
+    print(username)
+    print(photo1)
+    print(xiaomiid)
+    print(gender1)
+    print(88888888888888888888888888888888888888888)
+    gender2 = ""
+    if gender1 == '0':
+        gender2 = '男'
+    elif gender1 == '1':
+        gender2 = '女'
 
     if request.method == 'POST':
         # 获取文件上传对象
@@ -153,17 +174,25 @@ def user(request):
         # 保存到数据库
         user.save()
         # 从数据库取出图片地址
-        photo = User.objects.values('portrait', 'xiaomiid', 'username').filter(cellphone=phone).first()
+        photo = User.objects.values('portrait', 'xiaomiid', 'username', 'gender').filter(cellphone=phone).first()
         # photo = User.objects.values('portrait', 'xiaomiid', 'username').filter(cellphone='13754834137').first()
         print(photo, '1111')
         photo1 = photo['portrait']
         xiaomiid = photo['xiaomiid']
         username = photo['username']
+        gender = photo['gender']
+        gender1 = ""
+        if gender == '0':
+            gender1 = '男'
+        elif gender == '1':
+            gender1 = '女'
         print(xiaomiid)
         print(photo)
-        return render(request, 'app/user.html', {'photo': photo1, 'xiaomiid': xiaomiid, 'username': username})
+        return render(request, 'app/user.html', {'photo': photo1, 'xiaomiid': xiaomiid,
+                                                 'username': username, 'gender': gender1})
         # return HttpResponse('成功')
-    return render(request, 'app/user.html', {'photo': photo1, 'xiaomiid': xiaomiid, 'username': username})
+    return render(request, 'app/user.html', {'photo': photo1, 'xiaomiid': xiaomiid,
+                                             'username': username, 'gender': gender2})
 
 # 用户名 性别设置
 def user1(request):
@@ -172,7 +201,7 @@ def user1(request):
         gender = request.POST.get('gender')
         username = request.POST.get('nickname')
         # 当前用户的手机号
-        phone = request.session.get('phone')
+        phone = request.session.get('user')
         # 查出当前手机号的模型对象
         user = User.objects.filter(cellphone=phone).first()
         # user = User.objects.filter(cellphone='13754834137').first()
@@ -194,11 +223,44 @@ def user1(request):
     return render(request, 'app/user.html', {'form2': form2})
 
 
+def logistics(request, xid=1):
+    platen = Platen.objects.filter(xid=0)
+    cellphone = request.session.get('user')
+    user1 = User.objects.values('username', 'portrait').filter(cellphone=cellphone).first()
+    username = user1['username']
+    photo = user1['portrait']
+    print(3333333333333333333333333333333333)
+    if xid == 1:
+        ten = Platen.objects.filter(xid='1')
+        print(xid)
+        print(111111111111111111111111111)
+        print(ten)
+    else:
+        xid1 = xid
+        ten = Platen.objects.filter(xid=xid1)
+        print(xid)
+        print(2222222222222222222222222)
+        print(ten)
+    return render(request, 'app/logistics.html', {'platen': platen, 'ten': ten,
+                                                  'username': username, 'photo': photo
+                                                  })
+
+
 def index(request):
     menus = Index.objects.all()
     title = Paymenu.objects.all()
+    cellphone = request.session.get('user')
+    if not cellphone:
+        return render(request, "app/index.html", context={"menus": menus, 'title': title})
+    else:
+        user1 = User.objects.values('username', 'portrait').filter(cellphone=cellphone).first()
 
-    return render(request, "app/index.html", context={"menus": menus, 'title': title})
+        username = user1['username']
+        photo = user1['portrait']
+        return render(request, "app/index.html", context={"menus": menus, 'title': title,
+                                                          'username': username, 'photo': photo})
+
+
 
 
 def list(request):

@@ -115,7 +115,7 @@
                 </a>
 
                 <a id="logoutLink" class="fl-r logout"
-                   href="https://account.xiaomi.com/pass/logout?userId=2286948309&amp;callback=https://account.xiaomi.com">
+                   href="{% url 'app:index' %}">
                     退出
                 </a>
                 <script>
@@ -158,31 +158,31 @@
         <div class="layout">
             <div class="n-main-nav clearfix">
                 <ul class="c_b">
-                    <li>
-                        <a href="https://account.xiaomi.com/pass/auth/security/home?cUserId=ADcacoa0jneL1bluwndNrYa2V9k&amp;userId=2286948309"
-                           title="帐号安全" data-action="security">帐号安全</a>
-                        <em class="n-nav-corner"></em>
-                    </li>
+{#                    <li>#}
+{#                        <a href="https://account.xiaomi.com/pass/auth/security/home?cUserId=ADcacoa0jneL1bluwndNrYa2V9k&amp;userId=2286948309"#}
+{#                           title="帐号安全" data-action="security">帐号安全</a>#}
+{#                        <em class="n-nav-corner"></em>#}
+{#                    </li>#}
                     <li class="current">
                         <a href="https://account.xiaomi.com/pass/auth/profile/home?cUserId=ADcacoa0jneL1bluwndNrYa2V9k&amp;userId=2286948309"
                            title="个人信息" data-action="profile">个人信息</a>
                         <em class="n-nav-corner"></em>
                     </li>
-                    <li>
-                        <a href="https://account.xiaomi.com/pass/auth/sns/home?cUserId=ADcacoa0jneL1bluwndNrYa2V9k&amp;userId=2286948309"
-                           title="绑定授权" data-action="sns">绑定授权</a>
-                        <em class="n-nav-corner"></em>
-                    </li>
-                    <li>
-                        <a href="https://account.xiaomi.com/pass/auth/services/home?cUserId=ADcacoa0jneL1bluwndNrYa2V9k&amp;userId=2286948309"
-                           title="小米服务" data-action="services">小米服务</a>
-                        <em class="n-nav-corner"></em>
-                    </li>
-                    <li>
-                        <a href="https://account.xiaomi.com/userCenter/#device" title="设备管理" data-action="device"
-                           data-type="new">设备管理</a>
-                        <em class="n-nav-corner"></em>
-                    </li>
+{#                    <li>#}
+{#                        <a href="https://account.xiaomi.com/pass/auth/sns/home?cUserId=ADcacoa0jneL1bluwndNrYa2V9k&amp;userId=2286948309"#}
+{#                           title="绑定授权" data-action="sns">绑定授权</a>#}
+{#                        <em class="n-nav-corner"></em>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                        <a href="https://account.xiaomi.com/pass/auth/services/home?cUserId=ADcacoa0jneL1bluwndNrYa2V9k&amp;userId=2286948309"#}
+{#                           title="小米服务" data-action="services">小米服务</a>#}
+{#                        <em class="n-nav-corner"></em>#}
+{#                    </li>#}
+{#                    <li>#}
+{#                        <a href="https://account.xiaomi.com/userCenter/#device" title="设备管理" data-action="device"#}
+{#                           data-type="new">设备管理</a>#}
+{#                        <em class="n-nav-corner"></em>#}
+{#                    </li>#}
                 </ul>
             </div>
             <div class="n-frame">
@@ -242,35 +242,35 @@
                                                              href="https://account.xiaomi.com/pass/auth/profile/home?cUserId=ADcacoa0jneL1bluwndNrYa2V9k&amp;userId=2286948309">编辑基础资料</a>
                                 </div>
                             </div>
-                            <div class="framedatabox">
-                                <div class="fdata">
-                                    <h3>高级设置</h3>
-                                </div>
-                                <div class="fdata click-row">
-                                    <a class="color4a9 fr" target="_blank" href="https://www.mipay.com/"
-                                       title="管理">管理</a>
-                                    <p>
-                                        <span>银行卡</span>
-                                        <span class="arrow_r"></span>
-                                    </p>
-                                </div>
-                                <div class="fdata click-row">
-                                    <a style="display:none;" class="color4a9 fr" target="_blank" href="javascript:;"
-                                       title="管理" id="switchRegion">修改</a>
-                                    <p>
-                                        <span>帐号地区： </span>
-                                        <span class="box_center"><em id="region" _code="CN">China</em><i
-                                                class="arrow_r hidewap"></i></span>
-                                    </p>
-                                </div>
-                                <!-- <div class="fdata click-row">
-                                   <a class="color4a9 fr" target="_blank" href="/pass/auth/rights/home?userId=2286948309">管理</a>
-                                   <p>
-                                     <span>数据权利中心</span>
-                                     <span class="arrow_r"></span>
-                                   </p>
-                                 </div> -->
-                            </div>
+{#                            <div class="framedatabox">#}
+{#                                <div class="fdata">#}
+{#                                    <h3>高级设置</h3>#}
+{#                                </div>#}
+{#                                <div class="fdata click-row">#}
+{#                                    <a class="color4a9 fr" target="_blank" href="https://www.mipay.com/"#}
+{#                                       title="管理">管理</a>#}
+{#                                    <p>#}
+{#                                        <span>银行卡</span>#}
+{#                                        <span class="arrow_r"></span>#}
+{#                                    </p>#}
+{#                                </div>#}
+{#                                <div class="fdata click-row">#}
+{#                                    <a style="display:none;" class="color4a9 fr" target="_blank" href="javascript:;"#}
+{#                                       title="管理" id="switchRegion">修改</a>#}
+{#                                    <p>#}
+{#                                        <span>帐号地区： </span>#}
+{#                                        <span class="box_center"><em id="region" _code="CN">China</em><i#}
+{#                                                class="arrow_r hidewap"></i></span>#}
+{#                                    </p>#}
+{#                                </div>#}
+{#                                <!-- <div class="fdata click-row">#}
+{#                                   <a class="color4a9 fr" target="_blank" href="/pass/auth/rights/home?userId=2286948309">管理</a>#}
+{#                                   <p>#}
+{#                                     <span>数据权利中心</span>#}
+{#                                     <span class="arrow_r"></span>#}
+{#                                   </p>#}
+{#                                 </div> -->#}
+{#                            </div>#}
                         </div>
                     </div>
                 </div>
@@ -1731,7 +1731,7 @@
 </body>
 </html>
 <script>
-    console.log("22222")
+
     open_setting = document.getElementById('editInfo');
     open_setting.onclick=function(){
         set = document.getElementsByClassName("popup_mask");
