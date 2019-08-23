@@ -1,0 +1,78 @@
+{% extends 'app/bash.html' %}
+{% block shopping_cart %}
+    <div class="express-append">
+        <div class="container">
+            <div class="m-secondary-navigator"><span><a href="/app">首页</a></span><span><a
+                    href="https://www.xiaomiyoupin.com/cart#">购物车</a></span></div>
+        </div>
+    </div>
+    <div class="has-good-container container">
+        <div class="title" id="good-title"><a class="m-icons m-icons-check-active select-icon" data-src=""
+                                              href="javascript:;"></a><span class="all-txt">全选</span><span
+                class="product">商品信息</span><span class="price">单价</span><span class="num">数量</span><span
+                class="total">金额</span><span class="edit">操作</span></div>
+        <div class="cart-merchant-list" id="merchantList">
+            <div>
+                <div class="merchant-item-container">
+                    <div class="merchant-info"><a class="m-icons m-icons-check-active select-icon" data-src=""
+                                                  href="javascript:;"></a><span class="name"
+                                                                                data-src="/flagshipstore?id=1&amp;title=小米自营">小米自营</span>
+                        <div class="postmarginright mijiapost"><span><span
+                                class="postimg">!</span>已免运费</span><span class="layer hide">小米自营商品单笔订单支付金额满150元（以实际付款金额为准，代金券等不含在内）起包邮。小米电视、小米体重秤等因商品特殊性不参与满150元包邮，另小米电视系列产品需要单独配送费，请参见具体商品产品详情页说明。</span>
+                        </div>
+                    </div>
+
+    {% for comm in commodity %}
+                        <div>
+                            <div class="good-item-container cart-goods-con">
+                                <div class="merchant-reduce-top"></div>
+                                <div class="cart-good-items clearfix">
+                                    <div class="select"><a class="m-icons m-icons-check-active select-icon"
+                                                           data-src="" href="javascript:;"></a></div>
+                                    <div class="image" data-src="/detail?gid=100328&amp;pid=5954"
+                                         data-target="_blank"><img class=""
+                                                                   src="{{ comm.image }}"
+                                                                   data-src="{{ comm.image }}"
+                                                                   alt="{{ comm.title }}"></div>
+                                    <div class="name" data-src="/detail?gid=100328&amp;pid=5954"
+                                         data-target="_blank">
+                                        <div class="vertical-wrap"><p class="good-name brown-hover">{{ comm.title }}</p>
+                                        </div>
+                                    </div>
+                                    <div class="price"><span>￥</span><span>{{ comm.price }}</span></div>
+                                    <div class="num">
+                                        <div class="can-edit">
+                                            <div class="num-reduce-add" style="width: 134px;"><a
+                                                    class="m-icons m-icons-reduce minus-plus" data-src=""
+                                                    href="javascript:;"></a>
+                                                <span class="txt" style="width: 70px;">{{ comm.digital }}</span>
+                                                <a class="m-icons m-icons-add-active minus-plus" data-src=""
+                                                    href="javascript:;"></a></div>
+                                        </div>
+                                    </div>
+                                    <div class="subtotal"><span>￥</span><span>{{ comm.total_price }}</span></div>
+                                    <div class="del">
+                                        <a class="m-icons m-icons-close-hover icon" data-src=""
+                                                        href="delete?id={{ comm.id }}"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        {% endfor %}
+                </div>
+            </div>
+        </div>
+                {% for comm in commodity %}
+                    {% if comm.title == titles %}
+        <div class="cart-total bottom-total ">
+            <div class="ico fl"><a class="m-icons m-icons-check-active select-icon" data-src=""
+                                   href="javascript:;"></a><span class="select-text">全选</span><span
+                    class="already-select">已选1件</span></div>
+            <div class="totol-price-con no-reduce"><span
+                    class="total-after-prefer"><span>合计：</span>￥{{ comm.total_price }}</span></div>
+            <a href="settlement?tit={{ comm.title }}"><span class="checkout  fr">去结算</span></a></div>
+                    {% endif %}
+    {% endfor %}
+    </div>
+
+{% endblock %}

@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="72f052a8-7ae9-4a25-a5c6-2d0dcf5760a1" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Xiaomi$sanitation.coverage" NAME="sanitation Coverage Results" MODIFIED="1566469572843" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/xiaomi/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="279">
+              <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/App/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="331" column="25" lean-forward="true" selection-start-line="331" selection-start-column="25" selection-end-line="331" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="settlement.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/app/settlement.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+              <folding>
+                <element signature="e#408#1397#0#HTML" />
+                <element signature="e#3633#3667#0#HTML" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/App/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="203">
+              <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>popup_mask</find>
+      <find>编辑</find>
+      <find>mod_acc_tip</find>
+      <find>shut</find>
+      <find>href1</find>
+      <find>mod_acc_tip layereditinfo</find>
+      <find>editInfo</find>
+      <find>取消</find>
+      <find>na-name</find>
+      <find>哈哈</find>
+      <find>{{ username }}</find>
+      <find>form</find>
+      <find>登录</find>
+      <find>注册</find>
+      <find>photo</find>
+      <find>m-site-top</find>
+      <find>site-nav user-nav</find>
+      <find>fl m-help</find>
+      <find>n-frame</find>
+      <find>framedatabox</find>
+      <find>index</find>
+      <find>search</find>
+      <find>shopping_cart</find>
+      <find>Paymenu</find>
+      <find>m-icons m-icons-close-hover icon</find>
+      <find>count-input</find>
+      <find>quantity</find>
+      <find>class=&quot;good-container clearfix&quot;</find>
+      <find>小米AI</find>
+      <find>importKey</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Xiaomi/__init__.py" />
+        <option value="$PROJECT_DIR$/login/views.py" />
+        <option value="$PROJECT_DIR$/Xiaomi/urls.py" />
+        <option value="$PROJECT_DIR$/login/urls.py" />
+        <option value="$PROJECT_DIR$/login/models.py" />
+        <option value="$PROJECT_DIR$/Xiaomi/settings.py" />
+        <option value="$PROJECT_DIR$/xiaomi/__init__.py" />
+        <option value="$PROJECT_DIR$/templates/login.html" />
+        <option value="$PROJECT_DIR$/App/jinja2_env.py" />
+        <option value="$PROJECT_DIR$/zhongjianjia/custommiddleware.py" />
+        <option value="$PROJECT_DIR$/../../1.html" />
+        <option value="$PROJECT_DIR$/../../小米帐号 -注册.html" />
+        <option value="$PROJECT_DIR$/../../小米帐号 -注册1.html" />
+        <option value="$PROJECT_DIR$/templates/app/enrollf.html" />
+        <option value="$PROJECT_DIR$/App/verification-code.py" />
+        <option value="$PROJECT_DIR$/../../注册.html" />
+        <option value="$PROJECT_DIR$/templates/app/login.html" />
+        <option value="$PROJECT_DIR$/templates/app/enroll.html" />
+        <option value="$PROJECT_DIR$/../../我的订单-小米有品.html" />
+        <option value="$PROJECT_DIR$/templates/app/user_center.html" />
+        <option value="$PROJECT_DIR$/App/verification_code.py" />
+        <option value="$PROJECT_DIR$/../../小米帐号 -个人信息.html" />
+        <option value="$PROJECT_DIR$/authentications.py" />
+        <option value="$PROJECT_DIR$/App/file.html" />
+        <option value="$PROJECT_DIR$/App/file.py" />
+        <option value="$PROJECT_DIR$/static/css/layout.css" />
+        <option value="$PROJECT_DIR$/static/css/modacctip.css" />
+        <option value="$PROJECT_DIR$/App/forms.py" />
+        <option value="$PROJECT_DIR$/../django/Xiaomi/App/views.py" />
+        <option value="$PROJECT_DIR$/templates/app/list.html" />
+        <option value="$PROJECT_DIR$/xiaomi/urls.py" />
+        <option value="$PROJECT_DIR$/templates/app/user.html" />
+        <option value="$PROJECT_DIR$/templates/app/shopping_null.html" />
+        <option value="$PROJECT_DIR$/templates/app/search_list.html" />
+        <option value="$PROJECT_DIR$/templates/app/index.html" />
+        <option value="$PROJECT_DIR$/templates/app/details.html" />
+        <option value="$PROJECT_DIR$/templates/app/bash.html" />
+        <option value="$PROJECT_DIR$/templates/app/shopping_cart.html" />
+        <option value="$PROJECT_DIR$/templates/app/settlement.html" />
+        <option value="$PROJECT_DIR$/App/models.py" />
+        <option value="$PROJECT_DIR$/App/urls.py" />
+        <option value="$PROJECT_DIR$/xiaomi/settings.py" />
+        <option value="$PROJECT_DIR$/alipay/alipay_public_key.pem" />
+        <option value="$PROJECT_DIR$/alipay/app_private_key.pem" />
+        <option value="$PROJECT_DIR$/App/views.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="467" />
+    <option name="y" value="39" />
+    <option name="width" value="960" />
+    <option name="height" value="713" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Xiaomi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xiaomi" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Xiaomi" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Xiaomi" type="462c0819:PsiDirectoryNode" />
+              <item name="alipay" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PycharmProjects/dey" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Xiaomi\static\css" />
+      <recent name="D:\Xiaomi\templates\app" />
+      <recent name="D:\PycharmProjects\Xiaomi\static\css" />
+      <recent name="D:\PycharmProjects\Xiaomi\static\js" />
+      <recent name="D:\PycharmProjects\Xiaomi\templates\app" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Django server.Xiaomi">
+    <configuration name="sanitation" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Xiaomi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../sanitation.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="verification-code" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Xiaomi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/App" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="D:\PycharmProjects\Xiaomi\App\verification_code.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="verification_code" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Xiaomi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/App" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/App/verification_code.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Xiaomi" type="Python.DjangoServer" factoryName="Django server">
+      <module name="Xiaomi" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="xiaomi.settings" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+    </configuration>
+    <list>
+      <item itemvalue="Django server.Xiaomi" />
+      <item itemvalue="Python.sanitation" />
+      <item itemvalue="Python.verification-code" />
+      <item itemvalue="Python.verification_code" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.sanitation" />
+        <item itemvalue="Python.verification_code" />
+        <item itemvalue="Python.verification-code" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="72f052a8-7ae9-4a25-a5c6-2d0dcf5760a1" name="Default Changelist" comment="" />
+      <created>1565398474121</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1565398474121</updated>
+      <workItem from="1565398478849" duration="7362000" />
+      <workItem from="1565417175187" duration="5098000" />
+      <workItem from="1565423037975" duration="6011000" />
+      <workItem from="1565429400394" duration="1442000" />
+      <workItem from="1565430891373" duration="1038000" />
+      <workItem from="1565571292093" duration="3711000" />
+      <workItem from="1565587341681" duration="1065000" />
+      <workItem from="1565599484840" duration="16428000" />
+      <workItem from="1565657669480" duration="27447000" />
+      <workItem from="1565743786577" duration="26247000" />
+      <workItem from="1565830073439" duration="17646000" />
+      <workItem from="1565916327428" duration="9462000" />
+      <workItem from="1565950716373" duration="16081000" />
+      <workItem from="1566002323304" duration="2019000" />
+      <workItem from="1566008421194" duration="13782000" />
+      <workItem from="1566175513634" duration="30063000" />
+      <workItem from="1566262365717" duration="27005000" />
+      <workItem from="1566349244860" duration="21773000" />
+      <workItem from="1566393635564" duration="3096000" />
+      <workItem from="1566432354737" duration="14840000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="251616000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5011161" side_tool="true" weight="0.28486055" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32868525" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32789856" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49888393" weight="0.4963768" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23664123" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32964602" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" />
+    </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33664122" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" weight="0.32964602" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3188406" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32868525" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.49888393" weight="0.4963768" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5011161" side_tool="true" weight="0.28486055" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Xiaomi$sanitation.coverage" NAME="sanitation Coverage Results" MODIFIED="1566461924568" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../" />
+    <SUITE FILE_PATH="coverage/Xiaomi$verification_code.coverage" NAME="verification_code Coverage Results" MODIFIED="1566207624844" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/App" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/App/jinja2_env.py" />
+    <entry file="file://$PROJECT_DIR$/App/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zhongjianjia/custommiddleware.py" />
+    <entry file="file://$PROJECT_DIR$/../../1.html" />
+    <entry file="file://$PROJECT_DIR$/App/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../py37/py37_1/Lib/site-packages/django/db/models/fields/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/../../小米帐号 -注册.html" />
+    <entry file="file://$PROJECT_DIR$/../../小米帐号 -注册1.html" />
+    <entry file="file://$PROJECT_DIR$/templates/app/enrollf.html" />
+    <entry file="file://$PROJECT_DIR$/../py37/py37_1/Lib/site-packages/pymysql/err.py" />
+    <entry file="file://$PROJECT_DIR$/xiaomi/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaomi/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../py37/py37_1/Lib/site-packages/django/contrib/auth/hashers.py" />
+    <entry file="file://$PROJECT_DIR$/App/migrations/0001_initial.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="63" lean-forward="true" selection-start-line="20" selection-start-column="63" selection-end-line="20" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../py37/py37_1/Lib/site-packages/django/contrib/sessions/middleware.py" />
+    <entry file="file://$PROJECT_DIR$/../../注册.html" />
+    <entry file="file://$PROJECT_DIR$/../../我的订单-小米有品.html" />
+    <entry file="file://$PROJECT_DIR$/../../小米帐号 -个人信息.html" />
+    <entry file="file://$PROJECT_DIR$/authentications.py" />
+    <entry file="file://$PROJECT_DIR$/App/file.html" />
+    <entry file="file://$PROJECT_DIR$/static/img/file/15646418771_bitV0I3.png" />
+    <entry file="file://$PROJECT_DIR$/App/file.py" />
+    <entry file="file://$PROJECT_DIR$/../gittest/Xiaomi/Xiaomi/Xiaomi/settings.py" />
+    <entry file="file://$PROJECT_DIR$/static/css/modacctip.css" />
+    <entry file="file://$PROJECT_DIR$/../py37/py37_1/Lib/site-packages/django/core/handlers/exception.py" />
+    <entry file="file://$PROJECT_DIR$/App/forms.py" />
+    <entry file="file://$PROJECT_DIR$/static/css/layout.css" />
+    <entry file="file://$PROJECT_DIR$/templates/app/list.html" />
+    <entry file="file://$PROJECT_DIR$/templates/app/user_center.html" />
+    <entry file="file://$PROJECT_DIR$/templates/app/login.html" />
+    <entry file="file://$PROJECT_DIR$/templates/app/enroll.html" />
+    <entry file="file://$PROJECT_DIR$/../sanitation.py" />
+    <entry file="file://$PROJECT_DIR$/templates/app/user.html" />
+    <entry file="file://$PROJECT_DIR$/static/css/main.20b21653.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1574" column="1" selection-start-line="1574" selection-start-column="1" selection-end-line="1574" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/img/1564641877(1).png" />
+    <entry file="file://$PROJECT_DIR$/App/verification_code.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/search_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/shopping_null.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaomi/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1">
+          <caret line="6" column="47" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../19_选项卡.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="53" column="47" lean-forward="true" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/bash.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="460" column="50" selection-start-line="460" selection-start-column="50" selection-end-line="460" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="133" column="68" selection-start-line="133" selection-start-column="68" selection-end-line="133" selection-end-column="68" />
+          <folding>
+            <element signature="e#9250#9311#0#HTML" expanded="true" />
+            <element signature="e#9378#9432#0#HTML" expanded="true" />
+            <element signature="e#9588#9620#0#HTML" expanded="true" />
+            <element signature="e#9718#9987#0#HTML" />
+            <element signature="e#10259#10265#0#HTML" expanded="true" />
+            <element signature="e#10265#10271#0#HTML" expanded="true" />
+            <element signature="e#10380#11308#0#HTML" expanded="true" />
+            <element signature="e#11318#11396#0#HTML" expanded="true" />
+            <element signature="e#11436#12364#0#HTML" expanded="true" />
+            <element signature="e#12374#12452#0#HTML" expanded="true" />
+            <element signature="e#12492#13420#0#HTML" expanded="true" />
+            <element signature="e#13430#13508#0#HTML" expanded="true" />
+            <element signature="e#13548#14476#0#HTML" expanded="true" />
+            <element signature="e#14486#14564#0#HTML" expanded="true" />
+            <element signature="e#14604#15532#0#HTML" expanded="true" />
+            <element signature="e#15542#15620#0#HTML" expanded="true" />
+            <element signature="e#17282#18962#0#HTML" expanded="true" />
+            <element signature="e#19122#20050#0#HTML" expanded="true" />
+            <element signature="e#20060#20138#0#HTML" expanded="true" />
+            <element signature="e#20178#21106#0#HTML" expanded="true" />
+            <element signature="e#21116#21194#0#HTML" expanded="true" />
+            <element signature="e#21234#22162#0#HTML" expanded="true" />
+            <element signature="e#22172#22250#0#HTML" expanded="true" />
+            <element signature="e#22290#23218#0#HTML" expanded="true" />
+            <element signature="e#23228#23306#0#HTML" expanded="true" />
+            <element signature="e#23346#24274#0#HTML" expanded="true" />
+            <element signature="e#24284#24362#0#HTML" expanded="true" />
+            <element signature="e#24610#24631#0#HTML" expanded="true" />
+            <element signature="e#24664#24717#0#HTML" expanded="true" />
+            <element signature="e#24811#24874#0#HTML" expanded="true" />
+            <element signature="e#25236#26164#0#HTML" expanded="true" />
+            <element signature="e#26174#26252#0#HTML" expanded="true" />
+            <element signature="e#26292#27220#0#HTML" expanded="true" />
+            <element signature="e#27230#27308#0#HTML" expanded="true" />
+            <element signature="e#27348#28276#0#HTML" expanded="true" />
+            <element signature="e#28286#28364#0#HTML" expanded="true" />
+            <element signature="e#28404#29332#0#HTML" expanded="true" />
+            <element signature="e#29342#29420#0#HTML" expanded="true" />
+            <element signature="e#29460#30388#0#HTML" expanded="true" />
+            <element signature="e#30398#30476#0#HTML" expanded="true" />
+            <element signature="e#30725#30746#0#HTML" expanded="true" />
+            <element signature="e#30779#30832#0#HTML" expanded="true" />
+            <element signature="e#30926#30989#0#HTML" expanded="true" />
+            <element signature="e#31028#31081#0#HTML" expanded="true" />
+            <element signature="e#31175#31238#0#HTML" expanded="true" />
+            <element signature="e#31277#31330#0#HTML" expanded="true" />
+            <element signature="e#31424#31487#0#HTML" expanded="true" />
+            <element signature="e#31526#31579#0#HTML" expanded="true" />
+            <element signature="e#31673#31737#0#HTML" expanded="true" />
+            <element signature="e#31861#33541#0#HTML" expanded="true" />
+            <element signature="e#33700#34628#0#HTML" expanded="true" />
+            <element signature="e#34638#34716#0#HTML" expanded="true" />
+            <element signature="e#34756#35684#0#HTML" expanded="true" />
+            <element signature="e#35694#35772#0#HTML" expanded="true" />
+            <element signature="e#35812#36740#0#HTML" expanded="true" />
+            <element signature="e#36750#36828#0#HTML" expanded="true" />
+            <element signature="e#36868#37796#0#HTML" expanded="true" />
+            <element signature="e#37806#37884#0#HTML" expanded="true" />
+            <element signature="e#37924#38852#0#HTML" expanded="true" />
+            <element signature="e#38862#38940#0#HTML" expanded="true" />
+            <element signature="e#39189#39210#0#HTML" expanded="true" />
+            <element signature="e#39243#39296#0#HTML" expanded="true" />
+            <element signature="e#39390#39453#0#HTML" expanded="true" />
+            <element signature="e#39832#40760#0#HTML" expanded="true" />
+            <element signature="e#40770#40848#0#HTML" expanded="true" />
+            <element signature="e#40888#41816#0#HTML" expanded="true" />
+            <element signature="e#41826#41904#0#HTML" expanded="true" />
+            <element signature="e#41944#42872#0#HTML" expanded="true" />
+            <element signature="e#42882#42960#0#HTML" expanded="true" />
+            <element signature="e#43000#43928#0#HTML" expanded="true" />
+            <element signature="e#43938#44016#0#HTML" expanded="true" />
+            <element signature="e#44056#44984#0#HTML" expanded="true" />
+            <element signature="e#44994#45072#0#HTML" expanded="true" />
+            <element signature="e#45321#45342#0#HTML" expanded="true" />
+            <element signature="e#45375#45428#0#HTML" expanded="true" />
+            <element signature="e#45522#45586#0#HTML" expanded="true" />
+            <element signature="e#45948#46876#0#HTML" expanded="true" />
+            <element signature="e#46886#46964#0#HTML" expanded="true" />
+            <element signature="e#47004#47932#0#HTML" expanded="true" />
+            <element signature="e#47942#48020#0#HTML" expanded="true" />
+            <element signature="e#48060#48988#0#HTML" expanded="true" />
+            <element signature="e#48998#49076#0#HTML" expanded="true" />
+            <element signature="e#49116#50044#0#HTML" expanded="true" />
+            <element signature="e#50054#50132#0#HTML" expanded="true" />
+            <element signature="e#50172#51100#0#HTML" expanded="true" />
+            <element signature="e#51110#51188#0#HTML" expanded="true" />
+            <element signature="e#51437#51458#0#HTML" expanded="true" />
+            <element signature="e#51491#51544#0#HTML" expanded="true" />
+            <element signature="e#51638#51702#0#HTML" expanded="true" />
+            <element signature="e#52063#52991#0#HTML" expanded="true" />
+            <element signature="e#53001#53079#0#HTML" expanded="true" />
+            <element signature="e#53119#54047#0#HTML" expanded="true" />
+            <element signature="e#54057#54135#0#HTML" expanded="true" />
+            <element signature="e#54175#55103#0#HTML" expanded="true" />
+            <element signature="e#55113#55191#0#HTML" expanded="true" />
+            <element signature="e#55231#56159#0#HTML" expanded="true" />
+            <element signature="e#56169#56247#0#HTML" expanded="true" />
+            <element signature="e#56287#57215#0#HTML" expanded="true" />
+            <element signature="e#57225#57303#0#HTML" expanded="true" />
+            <element signature="e#57552#57573#0#HTML" expanded="true" />
+            <element signature="e#57606#57659#0#HTML" expanded="true" />
+            <element signature="e#57753#57816#0#HTML" expanded="true" />
+            <element signature="e#57855#57908#0#HTML" expanded="true" />
+            <element signature="e#58002#58065#0#HTML" expanded="true" />
+            <element signature="e#58189#59869#0#HTML" expanded="true" />
+            <element signature="e#60035#60963#0#HTML" expanded="true" />
+            <element signature="e#60973#61051#0#HTML" expanded="true" />
+            <element signature="e#61091#62019#0#HTML" expanded="true" />
+            <element signature="e#62029#62107#0#HTML" expanded="true" />
+            <element signature="e#62147#63075#0#HTML" expanded="true" />
+            <element signature="e#63085#63163#0#HTML" expanded="true" />
+            <element signature="e#63203#64131#0#HTML" expanded="true" />
+            <element signature="e#64141#64219#0#HTML" expanded="true" />
+            <element signature="e#64259#65187#0#HTML" expanded="true" />
+            <element signature="e#65197#65275#0#HTML" expanded="true" />
+            <element signature="e#65464#65485#0#HTML" expanded="true" />
+            <element signature="e#65518#65571#0#HTML" expanded="true" />
+            <element signature="e#65665#65728#0#HTML" expanded="true" />
+            <element signature="e#66123#67051#0#HTML" expanded="true" />
+            <element signature="e#67061#67139#0#HTML" expanded="true" />
+            <element signature="e#67179#68107#0#HTML" expanded="true" />
+            <element signature="e#68117#68195#0#HTML" expanded="true" />
+            <element signature="e#68235#69163#0#HTML" expanded="true" />
+            <element signature="e#69173#69251#0#HTML" expanded="true" />
+            <element signature="e#69291#70219#0#HTML" expanded="true" />
+            <element signature="e#70229#70307#0#HTML" expanded="true" />
+            <element signature="e#70347#71275#0#HTML" expanded="true" />
+            <element signature="e#71285#71363#0#HTML" expanded="true" />
+            <element signature="e#71575#71596#0#HTML" expanded="true" />
+            <element signature="e#71629#71682#0#HTML" expanded="true" />
+            <element signature="e#71776#71839#0#HTML" expanded="true" />
+            <element signature="e#71963#73643#0#HTML" expanded="true" />
+            <element signature="e#73809#74737#0#HTML" expanded="true" />
+            <element signature="e#74747#74825#0#HTML" expanded="true" />
+            <element signature="e#74865#75793#0#HTML" expanded="true" />
+            <element signature="e#75803#75881#0#HTML" expanded="true" />
+            <element signature="e#75921#76849#0#HTML" expanded="true" />
+            <element signature="e#76859#76937#0#HTML" expanded="true" />
+            <element signature="e#76977#77905#0#HTML" expanded="true" />
+            <element signature="e#77915#77993#0#HTML" expanded="true" />
+            <element signature="e#78033#78961#0#HTML" expanded="true" />
+            <element signature="e#78971#79049#0#HTML" expanded="true" />
+            <element signature="e#79234#79255#0#HTML" expanded="true" />
+            <element signature="e#79288#79341#0#HTML" expanded="true" />
+            <element signature="e#79435#79498#0#HTML" expanded="true" />
+            <element signature="e#79622#81302#0#HTML" expanded="true" />
+            <element signature="e#81463#82391#0#HTML" expanded="true" />
+            <element signature="e#82401#82479#0#HTML" expanded="true" />
+            <element signature="e#82519#83447#0#HTML" expanded="true" />
+            <element signature="e#83457#83535#0#HTML" expanded="true" />
+            <element signature="e#83575#84503#0#HTML" expanded="true" />
+            <element signature="e#84513#84591#0#HTML" expanded="true" />
+            <element signature="e#84631#85559#0#HTML" expanded="true" />
+            <element signature="e#85569#85647#0#HTML" expanded="true" />
+            <element signature="e#85687#86615#0#HTML" expanded="true" />
+            <element signature="e#86625#86703#0#HTML" expanded="true" />
+            <element signature="e#86944#86965#0#HTML" expanded="true" />
+            <element signature="e#86998#87051#0#HTML" expanded="true" />
+            <element signature="e#87145#87209#0#HTML" expanded="true" />
+            <element signature="e#87420#87449#0#HTML" expanded="true" />
+            <element signature="e#88043#88065#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/shopping_cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="70" column="56" selection-start-line="70" selection-start-column="56" selection-end-line="70" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="124" column="12" selection-start-line="124" selection-start-column="4" selection-end-line="124" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="21" column="1" lean-forward="true" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/app/settlement.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="34" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding>
+            <element signature="e#408#1397#0#HTML" />
+            <element signature="e#3633#3667#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alipay/alipay_public_key.pem">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/alipay/app_private_key.pem">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/xiaomi/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="157" lean-forward="true" selection-start-line="157" selection-end-line="157" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/App/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="331" column="25" lean-forward="true" selection-start-line="331" selection-start-column="25" selection-end-line="331" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

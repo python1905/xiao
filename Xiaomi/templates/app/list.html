@@ -1,0 +1,81 @@
+{% extends 'app/bash.html' %}
+{% block list %}
+    <div class="section c-goodlist">
+        <div class="container">
+            <div class="m-secondary-navigator"><span><a href="/index/">首页</a></span><span>
+                {% for title in titles %}
+                    {% if title.id == 1 %}
+                <a href="#">{{ title.content }}</a>
+                    {% endif %}
+                {% endfor %}
+            </span>
+            </div>
+            <div class="typeGoods-item">
+                {% for title in titles %}
+                    {% if title.id == 1 %}
+                        <h2>{{ title.content }}</h2>
+                    {% endif %}
+                {% endfor %}
+                <div class="m-product-list  clearfix">
+                    {% for list in lists %}
+                        {% if list.pid == 1 %}
+                        <a href="detail?id={{ list.id }}"><div class="pro-item m-tag-a " data-src="/detail?gid=100328" data-target="_blank">
+                            <div class="pro-img m-img-hover"><img class=""
+                                                                  src="{{ list.image }}"
+                                                                  data-src="https://img.youpin.mi-img.com/800_pic/639b31834d08d85c4de02e5a2fc426d6.png?t=webp"
+                                                                  alt="{{ list.title }}" style="margin-top: 0px;"></div>
+                            <div class="pro-tags-con"></div>
+                            <p class="pro-info" title="{{ list.title }}">{{ list.title }}</p>
+                            <p class="pro-desc" title="{{ list.content }}">{{ list.content }}.</p>
+                            <p class="pro-price"><span class="pro-unit">¥</span><span class="m-num">{{ list.price }}</span></p></div></a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="typeGoods-item">
+                {% for title in titles %}
+                    {% if title.id == 2 %}
+                <h2>{{ title.content }}</h2>
+                    {% endif %}
+                {% endfor %}
+                                <div class="m-product-list  clearfix">
+                    {% for list in lists %}
+                        {% if list.pid == 2 %}
+                        <a href="detail?id={{ list.id }}"><div class="pro-item m-tag-a " data-src="/detail?gid=100328" data-target="_blank">
+                            <div class="pro-img m-img-hover"><img class=""
+                                                                  src="{{ list.image }}"
+                                                                  data-src="https://img.youpin.mi-img.com/800_pic/639b31834d08d85c4de02e5a2fc426d6.png?t=webp"
+                                                                  alt="{{ list.title }}" style="margin-top: 0px;"></div>
+                            <div class="pro-tags-con"></div>
+                            <p class="pro-info" title="{{ list.title }}">{{ list.title }}</p>
+                            <p class="pro-desc" title="{{ list.content }}">{{ list.content }}.</p>
+                            <p class="pro-price"><span class="pro-unit">¥</span><span class="m-num">{{ list.price }}</span></p></div></a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="typeGoods-item">
+                {% for title in titles %}
+                    {% if title.id == 3 %}
+                <h2>{{ title.content }}</h2>
+                    {% endif %}
+                {% endfor %}
+                <div class="m-product-list  clearfix">
+                    {% for list in lists %}
+                        {% if list.pid == 3 %}
+                        <a href="detail?id={{ list.id }}"><div class="pro-item m-tag-a " data-src="/detail?gid=100328" data-target="_blank">
+                            <div class="pro-img m-img-hover"><img class=""
+                                                                  src="{{ list.image }}"
+                                                                  data-src="https://img.youpin.mi-img.com/800_pic/639b31834d08d85c4de02e5a2fc426d6.png?t=webp"
+                                                                  alt="{{ list.title }}" style="margin-top: 0px;"></div>
+                            <div class="pro-tags-con"></div>
+                            <p class="pro-info" title="{{ list.title }}">{{ list.title }}</p>
+                            <p class="pro-desc" title="{{ list.content }}">{{ list.content }}.</p>
+                            <p class="pro-price"><span class="pro-unit">¥</span><span class="m-num">{{ list.price }}</span></p></div></a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
